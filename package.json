@@ -20,7 +20,7 @@
   "scripts": {
     "pretest": "npm run lint && npm run hint",
     "test": "nyc --reporter=html --reporter=text mocha ./test/",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "NODE_ENV=TEST&& nyc report --reporter=text-lcov | coveralls",
     "docs": "docco -o ./docs/ ./src/*.js",
     "hint": "jshint ./src/*.js ./test/*.js",
     "lint": "eslint ./src/*.js ./test/*.js"
