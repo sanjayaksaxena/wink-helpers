@@ -11,4 +11,5 @@ cache:
 
 script:
   - npm run pretest
+  - npm run test
   - npm run coverage
