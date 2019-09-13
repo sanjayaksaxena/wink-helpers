@@ -17,10 +17,31 @@
     "Random Shuffle"
   ],
   "main": "src/wink-helpers.js",
+  "nyc": {
+    "watermarks": {
+      "branches": [
+        90,
+        99.5
+      ],
+      "lines": [
+        90,
+        99.5
+      ],
+      "functions": [
+        90,
+        99.5
+      ],
+      "statements": [
+        90,
+        99.5
+      ]
+    },
+    "check-coverage": true
+  },
   "scripts": {
     "pretest": "npm run lint && npm run hint",
-    "test": "nyc --check-coverage true --reporter=html --reporter=text mocha ./test/",
-    "coverage": "nyc report --reporter=text-lcov --check-coverage true | coveralls",
+    "test": "nyc --reporter=html --reporter=text mocha ./test/",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "docs": "docco -o ./docs/ ./src/*.js",
     "hint": "jshint ./src/*.js ./test/*.js",
     "lint": "eslint ./src/*.js ./test/*.js"
