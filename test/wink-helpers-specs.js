@@ -69,13 +69,13 @@ var it = mocha.it;
 //   } );
 // } );
 
-describe( 'ascending on key sort helpers', function () {
-  var expectedOutputIs = [ [ 1, 'a' ], [ 1, 'a1' ], [ 2, 'b' ], [ 3, 'c' ], [ 4, 'd' ], [ 6, 'c1' ] ],
-      whenInputIs = [ [ 4, 'd' ], [ 3, 'c' ], [ 6, 'c1' ], [ 2, 'b' ], [ 1, 'a' ], [ 1, 'a1' ] ];
-  it( 'should return ' + JSON.stringify( expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( whenInputIs ), function () {
-    expect( whenInputIs.sort( helpers.array.ascendingOnKey ) ).to.deep.equal( expectedOutputIs );
-  } );
-} );
+// describe( 'ascending on key sort helpers', function () {
+//   var expectedOutputIs = [ [ 1, 'a' ], [ 1, 'a1' ], [ 2, 'b' ], [ 3, 'c' ], [ 4, 'd' ], [ 6, 'c1' ] ],
+//       whenInputIs = [ [ 4, 'd' ], [ 3, 'c' ], [ 6, 'c1' ], [ 2, 'b' ], [ 1, 'a' ], [ 1, 'a1' ] ];
+//   it( 'should return ' + JSON.stringify( expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( whenInputIs ), function () {
+//     expect( whenInputIs.sort( helpers.array.ascendingOnKey ) ).to.deep.equal( expectedOutputIs );
+//   } );
+// } );
 
 describe( 'descending on key  sort helpers', function () {
   var expectedOutputIs = [ [ 11, 'a' ], [ 6, 'x' ], [ 4, 'd' ], [ 3, 'c' ], [ 2, 'b' ], [ 1, 'a' ], [ 1, 'a1' ] ],
