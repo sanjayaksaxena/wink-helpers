@@ -34,24 +34,24 @@ var describe = mocha.describe;
 var it = mocha.it;
 
 
-describe( 'isArray', function () {
-  var tests = [
-    { whenInputIs: 'UPPERCASE', expectedOutputIs: false },
-    { whenInputIs: 1, expectedOutputIs: false },
-    { whenInputIs: null, expectedOutputIs: false },
-    { whenInputIs: undefined,  expectedOutputIs: false },
-    { whenInputIs: {}, expectedOutputIs: false },
-    { whenInputIs: new Set( [ 1, 2, 3, 4 ] ), expectedOutputIs: false },
-    { whenInputIs: [ 1, 2, 3, 4 ], expectedOutputIs: true },
-    { whenInputIs: [ ], expectedOutputIs: true },
-    { whenInputIs: [ {} ], expectedOutputIs: true },
-  ];
-  tests.forEach( function ( test ) {
-    it( 'should return ' + JSON.stringify( test.expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( test.whenInputIs ), function () {
-      expect( helpers.array.isArray( test.whenInputIs ) ).to.equal( test.expectedOutputIs );
-    } );
-  } );
-} );
+// describe( 'isArray', function () {
+//   var tests = [
+//     { whenInputIs: 'UPPERCASE', expectedOutputIs: false },
+//     { whenInputIs: 1, expectedOutputIs: false },
+//     { whenInputIs: null, expectedOutputIs: false },
+//     { whenInputIs: undefined,  expectedOutputIs: false },
+//     { whenInputIs: {}, expectedOutputIs: false },
+//     { whenInputIs: new Set( [ 1, 2, 3, 4 ] ), expectedOutputIs: false },
+//     { whenInputIs: [ 1, 2, 3, 4 ], expectedOutputIs: true },
+//     { whenInputIs: [ ], expectedOutputIs: true },
+//     { whenInputIs: [ {} ], expectedOutputIs: true },
+//   ];
+//   tests.forEach( function ( test ) {
+//     it( 'should return ' + JSON.stringify( test.expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( test.whenInputIs ), function () {
+//       expect( helpers.array.isArray( test.whenInputIs ) ).to.equal( test.expectedOutputIs );
+//     } );
+//   } );
+// } );
 
 describe( 'ascending sort helpers', function () {
   var expectedOutputIs = [ 1, 2, 2, 3, 4 ],
