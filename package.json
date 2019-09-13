@@ -19,8 +19,8 @@
   "main": "src/wink-helpers.js",
   "scripts": {
     "pretest": "npm run lint && npm run hint",
-    "test": "nyc --reporter=html --reporter=text mocha ./test/",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc --check-coverage --reporter=html --reporter=text mocha ./test/",
+    "coverage": "nyc report --reporter=text-lcov --check-coverage | coveralls",
     "docs": "docco -o ./docs/ ./src/*.js",
     "hint": "jshint ./src/*.js ./test/*.js",
     "lint": "eslint ./src/*.js ./test/*.js"

@@ -61,13 +61,13 @@ var it = mocha.it;
 //   } );
 // } );
 
-describe( 'descending sort helpers', function () {
-  var expectedOutputIs = [ 4, 3, 2, 2, 1 ],
-      whenInputIs = [ 3, 4, 1, 2, 2 ];
-  it( 'should return ' + JSON.stringify( expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( whenInputIs ), function () {
-    expect( whenInputIs.sort( helpers.array.descending ) ).to.deep.equal( expectedOutputIs );
-  } );
-} );
+// describe( 'descending sort helpers', function () {
+//   var expectedOutputIs = [ 4, 3, 2, 2, 1 ],
+//       whenInputIs = [ 3, 4, 1, 2, 2 ];
+//   it( 'should return ' + JSON.stringify( expectedOutputIs ) + '\n\tif the input is ' + JSON.stringify( whenInputIs ), function () {
+//     expect( whenInputIs.sort( helpers.array.descending ) ).to.deep.equal( expectedOutputIs );
+//   } );
+// } );
 
 describe( 'ascending on key sort helpers', function () {
   var expectedOutputIs = [ [ 1, 'a' ], [ 1, 'a1' ], [ 2, 'b' ], [ 3, 'c' ], [ 4, 'd' ], [ 6, 'c1' ] ],
